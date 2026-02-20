@@ -24,3 +24,6 @@ dist-ssr
 
 # Bolt config
 .bolt/
+
+# Local Netlify folder
+.netlify
