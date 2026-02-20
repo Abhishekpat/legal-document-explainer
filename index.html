@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Document Explainer Bot</title>
+    <link rel="stylesheet" href="styles.css">
+  <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚖️ Legal Document Explainer Bot</h1>
+            <p class="tagline">Transform complex legal text into plain language</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2>Original Document</h2>
+                <textarea
+                    id="legalText"
+                    placeholder="Paste your legal document here..."
+                    rows="12"
+                ></textarea>
+                <div class="input-footer">
+                    <span id="originalWordCount" class="word-count">Words: 0</span>
+                    <button id="simplifyBtn" class="btn-primary">Simplify Document</button>
+                </div>
+                <div id="errorMessage" class="error-message"></div>
+            </section>
+
+            <section class="output-section" id="outputSection">
+                <h2>Simplified Explanation</h2>
+
+                <div class="output-stats">
+                    <span id="simplifiedWordCount" class="word-count">Simplified Words: 0</span>
+                </div>
+
+                <div class="output-card">
+                    <h3>📝 Summary</h3>
+                    <div id="summaryOutput" class="output-content"></div>
+                </div>
+
+                <div class="output-card">
+                    <h3>🔑 Key Points</h3>
+                    <ul id="keyPointsOutput" class="output-content"></ul>
+                </div>
+
+                <div class="output-card">
+                    <h3>⚠️ Obligations & Penalties</h3>
+                    <div id="obligationsOutput" class="output-content"></div>
+                </div>
+
+                <div class="output-card">
+                    <h3>📖 Simplified Text</h3>
+                    <div id="simplifiedTextOutput" class="output-content"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="disclaimer">
+                <strong>⚠️ Disclaimer:</strong> This tool provides informational summaries only and is not legal advice.
+                Please consult with a qualified legal professional for legal matters.
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
